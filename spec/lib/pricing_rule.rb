@@ -21,8 +21,4 @@ class Pricing_rule
     end
   end
 
-  def self.no_rule(products)
-    Pricing.total_price(products)
-  end
-
 end
