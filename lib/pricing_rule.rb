@@ -13,9 +13,9 @@ class Pricing_rule
     end
   end
 
-  def self.three_or_more(products, reduce_amout)
+  def self.three_or_more(products, reduce_amount)
     if products.size >= 3
-      Pricing.total_price(Pricing.apply_new_price(products, reduce_amout))
+      Pricing.total_price(Pricing.apply_new_price(products, reduce_amount))
     else
       Pricing.total_price(products)
     end

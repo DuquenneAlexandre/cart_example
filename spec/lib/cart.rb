@@ -18,7 +18,7 @@ class Cart
       end
       if promo[:promo_type] === 2
         pr_arr = alim_that_array(cart.products_arr, [], promo[:ref])
-        !pr_arr.empty? ? sum_prices += Pricing_rule.three_or_more(pr_arr, promo[:amout]) : false
+        !pr_arr.empty? ? sum_prices += Pricing_rule.three_or_more(pr_arr, promo[:amount]) : false
       end
     end
     sum_prices

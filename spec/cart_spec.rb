@@ -16,9 +16,9 @@ describe '.Cart' do
   products << Product.new({name: "super_product3", ref: "sp3", price: 10})
   products << Product.new({name: "super_product", ref: "sp1", price: 2})
 
-  my_cart = Cart.new(products, [{ref: "sp1", promo_type: 1, amout: 50},
-    {ref: "sp2", promo_type: 2, amout: 50},
-  {ref: "sp3", promo_type: 2, amout: 33.33}])
+  my_cart = Cart.new(products, [{ref: "sp1", promo_type: 1, amount: 50},
+    {ref: "sp2", promo_type: 2, amount: 50},
+  {ref: "sp3", promo_type: 2, amount: 33.33}])
 
   context '#total' do
     it 'return total price of the cart' do
